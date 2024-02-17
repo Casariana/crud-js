@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRUD JavaScript para SENA</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="./index.html">CRUD</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="./usuarios.html">Usuarios</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./tareas.html">Tareas</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="container mt-4" >
+            
+            <h2>Productos</h2>
+            <div class="input-group mb-3">
+                <input type="text" id="searchTaskInput" class="form-control" placeholder="Buscar producto por nombre">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" onclick="searchTask()">Buscar</button>
+            </div>
+            </div>
+                <button class="btn btn-primary mb-3" onclick="addProduct()">Agregar Producto</button>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="productBody">
+                </tbody>
+            </table>
+        </section>
+
+    <script src="./index.js"></script>
+
+    </body>
+</html>
